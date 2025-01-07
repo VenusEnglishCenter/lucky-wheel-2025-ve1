@@ -68,3 +68,13 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+#spin::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  border: 10px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
+
