@@ -77,7 +77,7 @@ function drawSector(sector, i) {
   ctx.rotate(ang + arc / 2);
   ctx.textAlign = "center";
   ctx.fillStyle = sector.text;
-  ctx.font = "bold 20px 'Lato', sans-serif";
+  ctx.font = "bold 2rem 'Lato', sans-serif";
   ctx.fillText(sector.label, rad * 0.6, 10);
 
   ctx.restore();
