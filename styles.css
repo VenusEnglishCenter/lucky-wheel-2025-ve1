@@ -69,3 +69,24 @@ body {
   flex-basis: 100%;
   flex: 1;
 }
+
+#result {
+  display: none;
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  /* width: 150px; */
+  /* height: 150px; */
+  /* background: white; */
+  /* border-radius: 50%; */
+  text-align: center;
+  color: red;
+  /* line-height: 80px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* cursor: pointer; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  /* user-select: none; */
+  /* z-index: 2; */
+}
