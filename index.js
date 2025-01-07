@@ -41,18 +41,18 @@ let spinButtonClicked = false;
 
 // Hàm chọn mục tiêu dựa trên xác suất
 function getIndexByProbability() {
-  const probabilities = sectors.map(sector => sector.probability);
-  const random = Math.random();
-  let cumulativeProbability = 0;
+  const expandedProbabilities = [];
+  sectors.forEach((sector, index) => {
+    let occurrences = Math.round(sector.probability * 100);
 
-  for (let i = 0; i < probabilities.length; i++) {
-    cumulativeProbability += probabilities[i];
-    if (random < cumulativeProbability) {
-      return i;
+    // Thêm các mục vào mảng dựa trên xác suất
+    for (let i = 0; i < occurrences; i++) {
+      expandedProbabilities.push(index);
     }
-  }
+  });
 
-  return sectors.length - 1; // Phòng trường hợp lỗi logic
+  const randomIndex = Math.floor(Math.random() * expandedProbabilities.length);
+  return expandedProbabilities[randomIndex];
 }
 
 // Hàm xác định mục hiện tại dựa trên góc quay
