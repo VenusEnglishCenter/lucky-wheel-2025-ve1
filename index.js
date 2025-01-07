@@ -1,10 +1,10 @@
 const sectors = [
-  { color: "yellow", text: "red", label: "Lì xì 1.000.000", probability: 0.02 },
-  { color: "red", text: "yellow", label: "Lì xì 800.000", probability: 0.05 },
-  { color: "yellow", text: "red", label: "Lì xì 700.000", probability: 0.1 },
-  { color: "red", text: "yellow", label: "Lì xì 500.000", probability: 0.2 },
-  { color: "yellow", text: "red", label: "Lì xì 1.686.868", probability: 0.01 },
-  { color: "red", text: "yellow", label: "Lì xì 300.000", probability: 0.62 },
+  { color: "yellow", text: "red", label: "Lì xì 1.000.000", probability: 2/1440 },
+  { color: "red", text: "yellow", label: "Lì xì 800.000", probability: 5/1440},
+  { color: "yellow", text: "red", label: "Lì xì 700.000", probability: 10/1440 },
+  { color: "red", text: "yellow", label: "Lì xì 500.000", probability: 20/1440 },
+  { color: "yellow", text: "red", label: "Lì xì 1.686.868", probability: 1/1440 },
+  { color: "red", text: "yellow", label: "Lì xì 300.000", probability: 62/1440 },
 ];
 
 const events = {
