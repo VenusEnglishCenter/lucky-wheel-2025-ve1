@@ -36,7 +36,8 @@ body {
 }
 
 #spin {
-  font: 1.5em/0 "Lato", sans-serif;
+  font: 3em/0 "Lato", sans-serif;
+  line-height: 1;
   user-select: none;
   cursor: pointer;
   display: flex;
@@ -65,7 +66,7 @@ body {
   margin-top: 10px;
   text-align: center;
   color: red;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -77,4 +78,8 @@ body {
   border-bottom-color: currentColor;
   border-top: none;
 }
+
+
+
+
 
